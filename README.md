@@ -41,5 +41,5 @@ Info on UCSC tools: http://www.genome.ucsc.edu/FAQ/FAQdownloads.html
 
 Info on UMichigan tools: https://genome.sph.umich.edu/w/index.php?title=LiftOver&mobileaction=toggle_view_desktop
 
-Source for liftRsNumber.py: https://genome.sph.umich.edu/wiki/LiftRsNumber.py\
+Source for liftRsNumber.py: https://genome.sph.umich.edu/wiki/LiftRsNumber.py \
 ***but use my edited version in this repository, NOT the one at the link***
