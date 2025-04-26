@@ -11,11 +11,11 @@ This is a pipeline to lift over datasets from human genome build 36 or 37 to bui
 # Steps to run
 
 ## Prepare external tools
-1. Download dbSnp155 from UCSC with the command `wget https://urldefense.com/v3/__http://hgdownload.soe.ucsc.edu/gbdb/hg38/snp/dbSnp155.bb__;!!GfteaDio!YIgCGs5YKtK_HTj5ETkfkeXLqt0dHdaUp9tkDc3iMNSMgLSZQ_tczULrSD5cg65kum-ZdqcUhRglAQTd-XjEFPdneUcG$ `. It is a large file (67.5 GB), so put it on HPC scratch.
-2. Download the tool `bigBedNamedItems` from UCSC: `wget https://urldefense.com/v3/__https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/bigBedNamedItems__;!!GfteaDio!YIgCGs5YKtK_HTj5ETkfkeXLqt0dHdaUp9tkDc3iMNSMgLSZQ_tczULrSD5cg65kum-ZdqcUhRglAQTd-XjEFOIzpQaR$ `.
+1. Download dbSnp155 from UCSC with the command `wget http://hgdownload.soe.ucsc.edu/gbdb/hg38/snp/dbSnp155.bb`. It is a large file (67.5 GB), so put it on HPC scratch.
+2. Download the tool `bigBedNamedItems` from UCSC: `wget https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/bigBedNamedItems`.
     - You will need to modify permissions with `chmod +x` to make this executable.
-3. Download the file `RsMergeArch.bcp.gz` (necessary to run liftRsNumber) from NCBI: `wget https://urldefense.com/v3/__ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606/database/organism_data/RsMergeArch.bcp.gz__;!!GfteaDio!YIgCGs5YKtK_HTj5ETkfkeXLqt0dHdaUp9tkDc3iMNSMgLSZQ_tczULrSD5cg65kum-ZdqcUhRglAQTd-XjEFO6rBxFf$ `
-4. Download the file `SNPHistory.bcp.gz` (necessary to run liftRsNumber) from NCBI: `wget https://urldefense.com/v3/__ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606/database/organism_data/SNPHistory.bcp.gz__;!!GfteaDio!YIgCGs5YKtK_HTj5ETkfkeXLqt0dHdaUp9tkDc3iMNSMgLSZQ_tczULrSD5cg65kum-ZdqcUhRglAQTd-XjEFLBAA-Fg$ `
+3. Download the file `RsMergeArch.bcp.gz` (necessary to run liftRsNumber) from NCBI: `wget ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606/database/organism_data/RsMergeArch.bcp.gz`
+4. Download the file `SNPHistory.bcp.gz` (necessary to run liftRsNumber) from NCBI: `wget ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606/database/organism_data/SNPHistory.bcp.gz`
 
 ## Identify mapped and merged rsids
 5. Download the script `liftRsNumber.py` in this repository. It originates from UMichigan (source below), but I modified it slightly to alter the output format.
@@ -37,9 +37,9 @@ This is a pipeline to lift over datasets from human genome build 36 or 37 to bui
 
 # Sources
 
-Info on UCSC tools: https://urldefense.com/v3/__http://www.genome.ucsc.edu/FAQ/FAQdownloads.html*snp__;Iw!!GfteaDio!YIgCGs5YKtK_HTj5ETkfkeXLqt0dHdaUp9tkDc3iMNSMgLSZQ_tczULrSD5cg65kum-ZdqcUhRglAQTd-XjEFBm7-Xxi$ 
+Info on UCSC tools: http://www.genome.ucsc.edu/FAQ/FAQdownloads.html
 
-Info on UMichigan tools: https://urldefense.com/v3/__https://genome.sph.umich.edu/w/index.php?title=LiftOver&mobileaction=toggle_view_desktop*Lift_dbSNP_rs_numbers__;Iw!!GfteaDio!YIgCGs5YKtK_HTj5ETkfkeXLqt0dHdaUp9tkDc3iMNSMgLSZQ_tczULrSD5cg65kum-ZdqcUhRglAQTd-XjEFOwtLUlN$ 
+Info on UMichigan tools: https://genome.sph.umich.edu/w/index.php?title=LiftOver&mobileaction=toggle_view_desktop
 
-Source for liftRsNumber.py: https://urldefense.com/v3/__https://genome.sph.umich.edu/wiki/LiftRsNumber.py__;!!GfteaDio!YIgCGs5YKtK_HTj5ETkfkeXLqt0dHdaUp9tkDc3iMNSMgLSZQ_tczULrSD5cg65kum-ZdqcUhRglAQTd-XjEFMSv4yQy$  \
+Source for liftRsNumber.py: https://genome.sph.umich.edu/wiki/LiftRsNumber.py\
 ***but use my edited version in this repository, NOT the one at the link***

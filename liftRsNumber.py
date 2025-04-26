@@ -1,4 +1,4 @@
-# originally downloaded from https://urldefense.com/v3/__https://genome.sph.umich.edu/wiki/LiftRsNumber.py__;!!GfteaDio!YIgCGs5YKtK_HTj5ETkfkeXLqt0dHdaUp9tkDc3iMNSMgLSZQ_tczULrSD5cg65kum-ZdqcUhRglAQTd-XjEFMSv4yQy$ 
+# originally downloaded from https://genome.sph.umich.edu/wiki/LiftRsNumber.py
 # lightly edited to alter output format
 
 #!/usr/bin/python
